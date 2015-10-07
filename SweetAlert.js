@@ -55,8 +55,10 @@ angular.module('oitozero.ngSweetAlert', [])
 		},
 		close: function() {
 			$rootScope.$evalAsync(function(){
-	        swal.close();
-	    });
+	        		swal.close();
+					window.onkeydown = null;
+          			window.onfocus = null;
+	    		});
 		}
 	};
 
